@@ -1,0 +1,105 @@
+/* Start header */
+header {
+    height: auto;
+    padding: 8px 0 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 555;
+    /* border-bottom: 1px solid #fff; */
+    .bars {
+        i.icon {
+            position: absolute;
+            right: 30px;
+            top: 25px;
+            cursor: pointer;
+            z-index: 10;
+            display: none;
+            color: #96c93d;
+        }
+    }
+    .logo {
+        h2 {
+            font-size: $mainFontSize + 4;
+            margin: 20px 0 0 5px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #fff;
+            font-family: $oneFontOpenSans;
+            letter-spacing: 1px;
+            cursor: pointer;
+        }
+    }
+    nav {
+        .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 0;
+            .list {
+                a {
+                    @extend .transition;
+                    display: block;
+                    padding: 10px;
+                    margin: 9px 0 5px;
+                    color: #000;
+                    text-decoration: none;
+                    color: #fff;
+                    font-family: $oneFontOpenSans;
+                    font-size: $mainFontSize - 2;
+                    text-transform: uppercase;
+                    &:hover {
+                        color: $mainColor;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sticky {
+    background-color: #111;
+    box-shadow: 1px 3px 4px #222;
+    opacity: 0.99;
+}
+
+
+
+
+@media (min-width: 769px) and (max-width: 991px) {
+    header {
+        .logo {
+            text-align: center;
+        }
+    }
+}
+@media (max-width: 768px) {
+    header {
+        .bars {
+            i.icon {
+                display: block;
+            }
+        }
+        nav {
+            .nav-list {
+                padding: 5px;
+                text-align: center;
+                display: none;
+                background-color: #111;
+                margin-top: 10px;
+                .list {
+                    text-align: center;
+                    margin: 5px;
+                    a {
+                        background-color: #444;
+                        border-radius: 50%;
+                        box-shadow: 1px 2px 2px #fff;
+                        &:hover {
+                            box-shadow: 1px 2px 2px $mainColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* End header */

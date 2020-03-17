@@ -1,0 +1,73 @@
+/* Start Portfolio */
+.portfolio {
+    .buttons {
+        width: 60%;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 20px;
+        button {
+            width: 100px;
+            background-color: #111;
+            color: #fff;
+            border: 0;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: $oneFontOpenSans;
+            font-size: $mainFontSize - 2;
+            font-weight: normal;
+            margin: 8px 3px;
+            outline: 0;
+        }
+    }
+    .images {
+        & > div img {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+        .row {
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+    .view-more {
+        width: 250px;
+        padding: 15px 5px;
+        background-color: #111;
+        color: #fff;
+        border: 0;
+        display: block;
+        margin: auto;
+        border-radius: 5px;
+        outline: 0;
+        /* effect */
+        border: 0;
+        position: relative;
+        overflow: hidden;
+        &:before,
+        &:after {
+            position: absolute;
+            content: " ";
+            width: 50%;
+            height: 100%;
+            top: 0;
+            background-color: $mainColor;
+            @extend .transition;
+        }
+        &:before {
+            left: 0%;
+        }
+        &:after {
+            right: 0%;
+        }
+        &:hover:before {left: -50%;}
+        &:hover:after {right: -50%;}
+        span {
+            position: relative;
+            z-index: 10;
+        }
+    }
+}
+.active-btn {
+    background-color: $mainColor !important; /*************************************************************************************************************************/
+}
+/* End Portfolio */

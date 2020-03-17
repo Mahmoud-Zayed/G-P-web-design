@@ -1,0 +1,63 @@
+/* Start Testimonials */
+.testimonials {
+    background-image: url("../images/testimonials/client-say-bg.jpg");
+    position: relative;
+    padding: 80px;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height: 660px;
+    .section-header {
+        padding: 20px 10px 15px;
+        color: white;
+        .section-title {
+            font-family: $oneFontOpenSans; 
+            font-weight: 700;
+            padding-top: 40px;
+        }
+        p {
+            color: #f7f7f7;
+            font-weight: normal;
+            font-family: $oneFontOpenSans;
+            font-size: $mainFontSize;
+        }
+    }
+    .test-info {
+        background-color:rgba(0, 0, 0, 0.6);
+        padding: 20px 10px;
+        color: #fff;
+        border-radius: 5px;
+        padding: 30px 10px 10px;
+        margin: 10px;
+        img {
+            display: block;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #fff;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        .test-info-title {
+            font-size: $mainFontSize + 8;
+            font-family: $oneFontOpenSans; 
+            margin: 10px 0 0 5px;
+        }
+        .test-info-span {
+            color: #999;
+            margin: 3px 7px;
+            display: block;
+        }
+        i {
+            color: #f2b100;
+            margin-bottom: 10px;
+        }
+        .test-info-desc {
+            font-weight: normal;
+            font-family: $oneFontOpenSans;
+            font-size: $mainFontSize - 2;
+            color: #f7f7f7;
+        }
+    }
+}
+/* End Testimonials */

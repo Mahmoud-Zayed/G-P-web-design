@@ -1,0 +1,46 @@
+/* Start Copyright */
+.copyright {
+    background-color: #232323;
+    color: #fff;
+    padding: 30px 0;
+    .copy-desc {
+        line-height: 27px;
+        color: #ddd;
+        font-family: $oneFontOpenSans;
+        font-size: $mainFontSize - 2;
+        font-weight: 300;
+        span {
+            font-size: $mainFontSize;
+        }
+        i {
+            color: $mainColor;
+        }
+    }
+    .copy-desc, 
+    ul {
+        margin: 0;
+    }
+    ul {
+        display: flex;
+        justify-content: space-around;
+        font-weight: 500;
+        color: #ddd;
+        font-family: $oneFontOpenSans;
+        font-size: $mainFontSize - 2;
+        li {
+            @extend .transition;
+            cursor: pointer;
+            &:hover {
+                color: $mainColor;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .copyright {
+        .copy-desc {
+            text-align: center;
+        }
+    }
+}
+/* End Copyright */

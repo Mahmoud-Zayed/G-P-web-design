@@ -1,0 +1,37 @@
+/* Start Services */
+.services {
+    background-color: #f7f7f7;
+    .serv {
+        text-align: center;
+        padding: 20px;
+        background-color: #fff;
+        margin-bottom: 30px;
+        i.icon {
+            background-color: $mainColor;
+            padding: 15px;
+            color: #fff;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            line-height: 50px;
+            text-align: center;
+            border: 2px solid #ddd;
+        }
+        .serv-title {
+            font-size: $mainFontSize + 9;
+            font-weight: 600;
+            padding: 10px 0 0 0;
+            margin-bottom: 20px;
+            font-family: $oneFontOpenSans;
+            color: #222;
+        }
+        .serv-desc {
+            font-size: $mainFontSize;
+            color: #666;
+            margin-bottom: 20px;
+            font-family: $oneFontOpenSans;
+            font-weight: lighter;
+        }
+    }
+}
+/* End Services */

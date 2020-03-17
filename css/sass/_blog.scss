@@ -1,0 +1,70 @@
+/* Start Our Blog */
+.blog {
+    .blog-info {
+        text-align: left;
+        border: 1px solid #efefef;
+        margin-bottom: 20px;
+        img {
+            width: 100%;
+        }
+        .blog-content {
+            padding: 0px 15px 20px;
+            .blog-info-title {
+                font-size: $mainFontSize + 4;
+                font-family: $oneFontOpenSans;
+                color: #333333;
+                margin: 20px 0 10px;
+            }
+            span.one {
+                margin-bottom: 0;
+            }
+            span {
+                color: #444;
+                font-weight: normal;
+                font-family: $oneFontOpenSans;
+                font-size: $mainFontSize - 2;
+                margin-bottom: 12px;
+                display: inline-block;
+                i {
+                    color: $mainColor;
+                }
+            }
+            .bolg-info-desc {
+                color: #444;
+                font-weight: lighter;
+                font-family: $oneFontOpenSans;
+                font-size: $mainFontSize - 1;
+                margin-bottom: 15px;
+            }
+            .blog-info-btn {
+                background: $mainColor;
+                padding: 10px 20px;
+                color: #fff;
+                outline: 0;
+                /* effect */
+                border: 0;
+                position: relative;
+                overflow: hidden;
+                p {
+                    position: relative;
+                    z-index: 10;
+                    margin: 0;
+                }
+                &:before {
+                    position: absolute;
+                    content: " ";
+                    width: 0%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    background-color: #111;
+                    @extend .transition;
+                }
+                &:hover:before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+/* End Our Blog */

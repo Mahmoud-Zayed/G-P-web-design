@@ -1,0 +1,69 @@
+/* Start Pricing */
+.pricing {
+    background-color: #f7f7f7;
+    font-family: $oneFontOpenSans;
+    .plan {
+        &:hover {
+            margin-top: -10px;
+            transform: scale(1.03);
+        }
+        &:hover .plan-btn,
+        &:hover .plan-title {
+            background-color: $mainColor;
+        }
+        text-align: center;
+        background-color: white;
+        margin-bottom: 30px;
+        @extend .transition;
+        .plan-title {
+            background: #252525;
+            color: white;
+            padding: 15px 0;
+            @extend .transition;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            margin-bottom: 0;
+            span {
+                display: block;
+                margin-bottom: 5px;
+            }
+            .price {
+                font-size: $mainFontSize + 19;
+                font-weight: 600;
+            }
+            .title {
+                font-size: $mainFontSize - 1;
+                font-weight: normal;
+            }
+        }
+        .pl-desc {
+            margin: 0 0 5px 0;
+            padding: 20px 0;
+            border-bottom: 1.5px solid #ccc;
+            font-size: $mainFontSize + 12;
+            font-family: $oneFontOpenSans;
+            font-weight: 500;
+            background-color: #fbfbfb;
+        }
+        ul {
+            margin-bottom: 0;
+            li {
+                padding: 10px;
+                border-bottom: 0.9px solid #ccc;
+            }
+        }
+        .plan-btn {
+            background-color: #252525;
+            width: 100%;
+            border: 0;
+            padding: 15px;
+            font-size: $mainFontSize + 2;
+            color: #fff;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            @extend .transition;
+            outline: 0;
+        }
+    }
+}
+/* End Pricing */

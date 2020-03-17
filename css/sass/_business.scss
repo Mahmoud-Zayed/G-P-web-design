@@ -1,0 +1,53 @@
+/* Start Business */
+.business {
+    background-image: url(../images/business/call_action_bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    position: relative;
+    .bs-info {
+        width: 90%;
+        margin: auto;
+        .bs-title {
+            width: 100%;
+            font-size: $mainFontSize + 20;
+            font-family: $oneFontOpenSans; 
+            margin-bottom: 10px;
+            @media (max-width: 575px) {
+                font-size: $mainFontSize + 14;
+            }
+        }
+        .bs-desc {
+            margin: auto;
+            width: 80%;
+            margin-bottom: 25px;
+            font-family: $oneFontOpenSans; 
+            font-weight: normal;
+            font-size: $mainFontSize + 2;
+            letter-spacing: 1px;
+            @media (max-width: 575px) {
+                font-size: $mainFontSize;
+            }
+        }
+        .bs-btn {
+            padding: 12px 25px;
+            background-color: $mainColor;
+            margin-bottom: 10px;
+            border: 2px solid $mainColor;
+            @extend .transition;
+            font-family: $oneFontOpenSans;
+            outline: 0;
+            border-radius: 3px;
+        }
+        .bs-btn {
+            &:hover {
+                background: none;
+                border: 2px solid $mainColor;
+                color: white;
+                
+            }
+        }
+    }
+}
+/* End Business */

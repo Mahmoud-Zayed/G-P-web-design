@@ -1,0 +1,96 @@
+/* Start Home */
+.home {
+    height: 100vh;
+    position: relative;
+    /* background: linear-gradient(to right, #96c93d, #00b09b); */
+    background-image: url("../images/home/laptop-1280536_1920.jpg");
+    padding: 80px;
+    background-size: cover;
+    background-position: center; /**/
+    .home-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 60%;
+        .home-title {
+            font-size: $mainFontSize + 34;
+            color: #fff;
+            margin-bottom: 20px;
+            font-weight: 600;
+            font-family: $oneFontOpenSans;
+        }
+        .home-desc {
+            color: #ddd;
+            font-size: $mainFontSize;
+            font-weight: normal;
+            font-family: $oneFontOpenSans;
+            margin-bottom: 35px;
+        }
+        .buttons {
+            .button {
+                padding: 10px 28px;
+                background-color: $mainColor;
+                font-family: $oneFontOpenSans;
+                border-radius: 3px;
+                margin: 8px;
+                width: 200px;
+                @extend .transition;
+                outline: 0;
+                /* effect */
+                border: 0;
+                position: relative;
+                overflow: hidden;
+                &:before,
+                &:after {
+                    position: absolute;
+                    content: " ";
+                    width: 100%;
+                    height: 53%;
+                    left: 0;
+                    background-color: #111;
+                    @extend .transition;
+                }
+                &:before {
+                    top: -51%;
+                }
+                &:after {
+                    bottom: -51%;
+                }
+                &:hover:before {top: 0;}
+                &:hover:after {bottom: 0;}
+                &:hover {
+                    background-color: #111;
+                }
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    font-weight: 550;
+                    position: relative;
+                    z-index: 10;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .home {
+        .home-content {
+            width: 85%;
+            .home-title {
+                font-size: $mainFontSize + 19;
+            }
+            .home-desc {
+                font-size: $mainFontSize - 2;
+            }
+            .buttons {
+                .button {
+                    font-size: $mainFontSize - 2;
+                    width: 160px;
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}
+/* End Home */

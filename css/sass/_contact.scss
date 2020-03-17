@@ -1,0 +1,135 @@
+/* Start Contact Us */
+.contact {
+    background: #f7f7f7;
+    .contact-info {
+        .contact-info-title {
+            margin-bottom: 15px;
+            color: #333;
+            font-size: $mainFontSize + 14;
+            font-family: $oneFontOpenSans;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+        .contact-info-desc {
+            margin-bottom: 15px;
+            color: #777;
+            font-size: $mainFontSize - 2;
+            font-family: $oneFontOpenSans;
+            font-weight: normal;
+            line-height: 1.5;
+        }
+        span {
+            &:hover i {
+                background: $mainColor;
+                color: #fff;
+                border-color: #666;
+            }
+            display: block;
+            margin-bottom: 10px;
+            color: #555;
+            font-size: $mainFontSize - 2;
+            font-family: $oneFontOpenSans;
+            font-weight: normal;
+            i {
+                margin-right: 10px;
+                border: 1px solid $mainColor;
+                border-radius: 50%;
+                width: 40px;
+                height: 40px;
+                text-align: center;
+                line-height: 40px;
+                font-size: $mainFontSize + 2;
+                @extend .transition;
+                cursor: pointer;
+                color: #444;
+            }
+        }
+    }
+    form {
+        .form-group {
+            display: flex;
+            margin-top: 20px;
+            input::placeholder,
+            textarea::placeholder {
+                font-size: $mainFontSize - 2;
+                color: #888;
+                font-weight: normal;
+                font-family: $oneFontOpenSans;
+            }
+            input {
+                margin: 6px 0;
+                &:focus {
+                    outline: 0;
+                    border: 1px solid #ddd;
+                    box-shadow: none;
+                }
+            }
+            input.on {
+                margin-right: 20px;
+            }
+        }
+        textarea {
+            margin: 12px auto !important;
+            text-align: center;
+            &:focus {
+                outline: 0;
+                border: 1px solid #ddd;
+                box-shadow: none;
+            }
+        }
+        .form-btn {
+            margin: 20px auto;
+            display: block;
+            padding: 13px 20px;
+            width: 180px;
+            font-size: $mainFontSize - 2;
+            font-family: $oneFontOpenSans;
+            font-weight: normal;
+            color: #fff;
+            background: $mainColor;
+            border: 0;
+            text-transform: capitalize;
+            outline: 0;
+            border-radius: 3px;
+            /* effect */
+            border: 0;
+            position: relative;
+            overflow: hidden;
+            &:before,
+            &:after {
+                position: absolute;
+                content: " ";
+                width: 100%;
+                height: 51%;
+                left: 0;
+                background-color: #111;
+                @extend .transition;
+            }
+            &:before {
+                top: -51%;
+            }
+            &:after {
+                bottom: -51%;
+            }
+            &:hover:before {top: 0;}
+            &:hover:after {bottom: 0;}
+            p {
+                padding: 0;
+                margin: 0;
+                position: relative;
+                z-index: 10;
+            }
+        }
+    }
+}
+@media (max-width: 575px) {
+    .contact form {
+        .form-group {
+            display: block;
+        }
+        input {
+            margin-bottom: 20px;
+        }
+    }
+}
+/* End Contact Us */

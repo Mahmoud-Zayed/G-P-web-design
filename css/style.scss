@@ -1,0 +1,126 @@
+/*
+    --- ---    -- 0 -- Start General Style Sass  --- ---
+    --- ---    -- 1 -- Start General Style       --- ---
+    -- 2 -- Start import files
+      -- 1 -- Start Section Loading
+      -- 2 -- Start Scroll To Top
+      -- 3 -- Start header
+      -- 4 -- Start Home
+      -- 5 -- Start About
+      -- 6 -- Start Services
+      -- 7 -- Start Stat
+      -- 8 -- Start Portfolio
+      -- 9 -- Start Exprtes
+      -- 10 -- Start Pricing
+      -- 11 -- Start Team
+      -- 12 -- Start Business
+      -- 13 -- Start Choose
+      -- 14 -- Start Testimonials
+      -- 15 -- Start Our Blog
+      -- 16 -- Start Twitter
+      -- 17 -- Start Next Project
+      -- 18 -- Start Contact Us
+      -- 19 -- Start Footer
+      -- 20 -- Start Copyright
+*/
+
+/* Start General Style Sass */
+$mainColor: #7cb62f;
+$oneFontOpenSans: 'Open Sans', sans-serif;
+$twoFontRaleway: 'Raleway', sans-serif;
+$mainFontSize: 16px;
+
+.transition {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Start General Style Sass */
+
+/* Start General Style */
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+.padding-y {
+    padding: 70px 0;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.overlay-two {
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+/* Start section-header */
+.section-header {
+    padding-bottom: 35px;
+    .section-title {
+        font-size: $mainFontSize + 24;
+        @media (max-width: 768px) {
+            font-size: $mainFontSize + 19;
+        }
+    }
+    .line {
+        width: 170px;
+        background-color: #c9c9c9;
+        height: 2px;
+        margin: auto;
+        @media (max-width: 768px) {
+            width: 155px;
+        }
+        span {
+            width: 100px;
+            display: block;
+            height: 4px;
+            background-color: $mainColor;
+            margin: auto;
+            position: relative;
+            bottom: 1px;
+        }
+    }
+    p {
+        line-height: 1.6;
+        width: 500px;
+        color: #666;
+        margin: 10px auto;
+        @media (max-width: 768px) {
+            width: 80%;
+        }
+    }
+}
+/* End section-header */
+
+/* End General Style */
+
+/*Start import files */
+@import "sass/header";
+@import "sass/home";
+@import "sass/services";
+@import "sass/about";
+@import "sass/stat";
+@import "sass/portfolio";
+@import "sass/exprtes";
+@import "sass/pricing";
+@import "sass/team";
+@import "sass/business";
+@import "sass/choose";
+@import "sass/testimonials";
+@import "sass/blog";
+@import "sass/twitter";
+@import "sass/project";
+@import "sass/contact";
+@import "sass/footer";
+@import "sass/copyright";
+@import "sass/scroll-top";
+@import "sass/loading-overlay";
+/*End import files */

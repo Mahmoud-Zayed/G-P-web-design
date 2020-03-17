@@ -1,0 +1,41 @@
+/* Start Twitter */
+.twitter {
+    background-image: url(../images/twitter/twitter-feed-bg.jpg);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    min-height: 400px;
+    height: 100%;
+    .twitter-info {
+        margin: 95px 0;
+        outline: 0;
+        i {
+            color: $mainColor;
+            margin-bottom: 10px;
+        }
+        .twitter-info-desc {
+            font-family: $oneFontOpenSans;
+            font-size: $mainFontSize - 2; 
+            padding: 10px 50px;  
+            margin-bottom: 15px;
+            font-weight: normal;
+            color: #f7f7f7;
+            text-transform: capitalize;
+            span {
+                color: $mainColor;
+            }
+        }
+        .twitter-info-text {
+            font-family: $oneFontOpenSans;
+            font-size: $mainFontSize;  
+            margin-bottom: 15px;
+            font-weight: normal;
+            color: #f7f7f7;
+            text-transform: capitalize;
+            font-style: italic;
+            padding: 10px;
+        }
+    }
+}
+/* End Twitter */

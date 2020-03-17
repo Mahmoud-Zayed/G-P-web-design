@@ -1,0 +1,64 @@
+/* Start Team */
+.team {
+    .item {
+        &:hover .team-info .team-info-social .bg {
+            background: $mainColor;
+            width: 100%;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+        .team-info {
+            background: #f7f7f7;
+            border: 1px solid #999;
+            border-radius: 6px;
+            margin: 30px 10px;
+            box-shadow: 1px 1px 10px 1px #999;
+            img {
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+            }
+            .team-info-title {
+                margin: 10px 0 5px;
+                font-size: $mainFontSize + 4;
+                color: #111;
+                font-family: $oneFontOpenSans; 
+                font-weight: 600;
+                letter-spacing: 1.1px;
+            }
+            .team-info-desc {
+                display: block;
+                margin-bottom: 5px;
+                font-size: $mainFontSize - 1;
+                color: #444;
+                font-family: $oneFontOpenSans;
+            }
+            .team-info-social {
+                background: #252525;
+                padding: 20px;
+                color: #fff;
+                display: flex;
+                justify-content: space-around;
+                position: relative;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                margin-bottom: 0;
+                i {
+                    position: relative;
+                    z-index: 15;
+                    cursor: pointer;
+                }
+                .bg {
+                    position: absolute;
+                    display: block;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                    width: 0;
+                    @extend .transition;
+                }
+            }
+        }
+    }
+}
+/* End Team */

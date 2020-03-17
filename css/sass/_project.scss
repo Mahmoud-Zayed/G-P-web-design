@@ -1,0 +1,30 @@
+/* Start Next Project */
+.project {
+    padding: 40px 0;
+    background-color: $mainColor;
+    .project-desc {
+        color: #000;
+        font-size: $mainFontSize + 14;
+        font-family: $oneFontOpenSans;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+    .project-btn {
+        background: #333;
+        font-size: $mainFontSize - 2;
+        padding: 14px 25px;
+        font-family: $oneFontOpenSans;
+        border-radius: 5px;
+        border: 0;
+        color: #fff;
+        width: 170px;
+        margin-top: 15px;
+        outline: 0;
+    }
+}
+@media (max-width: 991px) {
+    .project {
+        text-align: center;
+    }
+}
+/* End Next Project */ 
